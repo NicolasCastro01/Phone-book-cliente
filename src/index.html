@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta description="projeto criado para teste técnico.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone Book</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Phone Book</h1>
+        <section id="contact__creation__container">
+            <h3>Novo contato</h3>
+            <input type="text" name="contact__creation__name" id="contact__creation__name" placeholder="nome" />
+            <input type="number" min="0" max="999" name="contact__creation__age" id="contact__creation__age"
+                placeholder="idade" />
+            <input type="text" name="contact__creation__phone" id="contact__creation__phone" placeholder="telefone" />
+            <button class="contact__info__actions" id="contact__creation__add__btn" onclick="createContact()">Inserir novo contato</button>
+        </section>
+        <section id="contact__search__container">
+            <div id="contact__search__input">
+                <input type="search" name="search__input" id="search__input" placeholder="buscar por nome, telefone">
+                <button id="contact__search__btn" onclick="searchContact()">buscar</button>
+                <button id="contact__new__btn" onclick="showCreation()">Novo contato</button>
+            </div>
+            <div id="contact__info"></div>
+        </section>
+        <section id="contact__edit__container">
+            <h3>Editar contato</h3>
+            <input type="text" name="contact__edit__name" id="contact__edit__name" placeholder="nome" />
+            <input type="number" min="0" max="999" name="contact__edit__age" id="contact__edit__age"
+                placeholder="idade" />
+            <input type="text" name="contact__edit__phone" id="contact__edit__phone" placeholder="telefone" />
+            <button class="contact__info__actions" id="contact__edit__save__btn">Salvar</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
